@@ -41,7 +41,7 @@ make
 And finally, as root:
 
 ```
-make install
+make bindir=/usr/local/kannel install
 ```
 
 Included plugins
@@ -66,3 +66,4 @@ The best to ask for help is on Kannel's mailing lists.
 Please visit Kannel's site for more information:
 
 http://www.kannel.org/
+http://www.websmspanel.com
