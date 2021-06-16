@@ -1,0 +1,27 @@
+group = websmsbox
+bearerbox-host = localhost
+bearerbox-port = 13001
+smsbox-port = 13005
+smsbox-port-ssl = false
+log-file = "/var/log/kannel/kannel-websmsbox.log"
+log-level = 0
+#ssl-client-certkey-file = ""
+#ssl-server-cert-file = ""
+#ssl-server-key-file = ""
+#ssl-trusted-ca-file = ""
+admin-port=13050
+admin-password=pluginpw
+
+## Example group for configuring an HTTP plugin
+#group=websmsbox-plugin
+#path=/opt/kannel/kannel-websmsbox/plugins/websmsbox_http.so
+#init="websmsbox_http_init"
+#priority=1
+#args="/opt/kannel/kannel-websmsbox/contrib/websmsbox_http/websmsbox_http.conf"
+#id=http1
+
+group=websmsbox-plugin
+path=plugins/websmsbox_example.so
+priority=1
+id=example1
+init="websmsbox_example_init"

@@ -1,0 +1,13 @@
+CMakeLists.txt
+*.o
+gw/websmsbox
+Makefile
+gw/.deps
+libtool
+pb-config
+plugins/*.so
+config.*
+.idea
+gwlib/.deps
+gwlib/libdb.a
+autom4te.cache
