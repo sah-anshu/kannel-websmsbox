@@ -26,7 +26,7 @@ elif automake --version > /dev/null 2>&1; then
     amvers=""
   fi
 fi
-
+amvers=""
 if test "$amvers" = "no"; then
   set +x
   echo "$0: you need automake version 1.5 or later"
